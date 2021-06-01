@@ -1,0 +1,59 @@
+/*
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * Write your model definitions here
+ */
+
+namespace org.vanet1.mynetwork
+
+asset VehicleReg identified by VIN {
+  o String VIN
+  o String PID
+  o String PID2
+  o String PID3
+}
+
+asset Vehicle identified by PID {
+  o String PID
+  o String PK
+  o String status
+  o Integer misbehaviorRpt
+}
+
+participant AuthParty identified by APID {
+  o String APID
+  o String APName
+}
+
+participant RSU identified by RSUID {
+  o String RSUID
+  o String RSUName
+}
+
+transaction Misbehavior {
+  --> Vehicle car
+}
+
+transaction Revocation {
+  --> Vehicle car
+}
+
+transaction Readmission {
+  --> VehicleReg car
+  o String pseudo1
+  o String pseudo2
+  o String pseudo3
+}
+

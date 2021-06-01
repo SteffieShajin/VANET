@@ -1,0 +1,10 @@
+/**
+ * New query file
+ */
+
+query selectAllValidVehicles {
+  description: "Select all vehilces that have valid status"
+  statement:
+      SELECT org.vanet1.mynetwork.Vehicle
+          WHERE (PID == _$PIDParam AND status =='valid')
+}
