@@ -6,7 +6,8 @@ To install Hyperledger Composer: https://hyperledger.github.io/composer/latest/i
 To develop a business network, follow the instructions in: https://hyperledger.github.io/composer/latest/tutorials/developer-tutorial
 
 
-# Files in Fabric network
+# Files in vanetNetwork-master
+
     
    •	Model file (/models/org.vanet1.mynetwork.cto) - Participants declaration in the network
    
