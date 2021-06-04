@@ -1,10 +1,17 @@
-# vanet1-network
+# Fabric network
 
-The blockchain network used for the proposed method in VANET.
+The blockchain network used is the Hyperledger Fabric supported by the Hyperledger Composer Framework.
+To install Hyperledger Composer: https://hyperledger.github.io/composer/latest/installing/installing-index.html
 
-Go to: https://hyperledger.github.io/composer/latest/installing/installing-index.html and install the Hyperledger Composer framework.
+To develop a business network, follow the instructions in: https://hyperledger.github.io/composer/latest/tutorials/developer-tutorial
 
-I had errors when trying to install it in Virtual Operating System, but faced no trouble installing it in a system with local OS as Ubuntu.
 
-To develop a business network, follow the instructions in: https://hyperledger.github.io/composer/latest/tutorials/developer-tutorial.
-In step 2, you will be required to define the modelling assets, participants, and transactions which can be found in: vanetNetwork/models/org.vanet1.mynetwork.cto file. You will also be needed to provide JavaScript transaction logic (chaincode), which can be found in: vanetNetwork/lib/logic.js. The access permissions can be found in vanetNetwork/permissions.acl and the query can be found in: vanetNetwork/queries.qry.
+# Files in Fabric network
+    
+   •	Model file (/models/org.vanet1.mynetwork.cto) - Participants declaration in the network
+   
+   •	Script file (/lib/logic.js) - Transactions between the participants and their functions
+   
+   •	Access control file (permissions.acl) - Access control rules for the network participants
+   
+   •	Query file (queries.qry) - Query definitions
