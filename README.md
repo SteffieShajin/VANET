@@ -27,3 +27,13 @@ To install Crypto++ library - https://www.cryptopp.com/
 # Rest API file
 
 The RestAPI.cc file contains the functions for different transactions in the Blockchain network which includes vehicle generation, assigning public & private keys, and malicious/attacker vehicles generation.
+
+# Simulation Tools Used
+
+   •	OMNET++ 5.3 - Objective modular Network Testbed is a network simulator
+   
+   •	SUMO 0.32.0 - Simulation of Urban Mobility is an open-source framework
+   
+   •	Veins 4.7.1 - Open-source framework that connects both the OMNET++ and SUMO
+   
+   •	Hyperledger Composer - Framework to develop Blockchain applications
