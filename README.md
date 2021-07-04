@@ -4,7 +4,7 @@ The blockchain network used is the Hyperledger Fabric supported by the Hyperledg
 
 To install Hyperledger Composer: https://hyperledger.github.io/composer/latest/installing/installing-index.html
 
-# Veins Documentation
+# Veins
 
 Veins is the open source vehicular network simulation framework.
 
